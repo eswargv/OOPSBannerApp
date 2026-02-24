@@ -1,17 +1,24 @@
 public class OOPSBannerApp{
      public static void main(String[] args) {
 
-        System.out.println(String.join("\n",
+        // Inline declaration + initialization
+        String[] lines = {
+            String.join(" ", "  **  ", "  **  ", " **  ", "  ***  "),
+            String.join(" ", " *     * ", " *     * ", " *     * ", " *     * "),
+            String.join(" ", "*       ", "       ", " *     * ", "        "),
+            String.join(" ", "*       ", "       ", " ***  ", "  ***  "),
+            String.join(" ", "*       ", "       *", " *       ", "       * "),
+            String.join(" ", " *     * ", " *     * ", " *       ", " *     * "),
+            String.join(" ", "  **  ", "  **  ", " *       ", "  ***  ")
+        };
 
-                String.join("", "  **  ", "  **  ", " **  ", "  ***  "),
-                String.join("", " *     * ", " *     * ", " *     * ", " *     * "),
-                String.join("", "*       ", "       ", " *     * ", "        "),
-                String.join("", "*       ", "       ", " ***  ", "  ***  "),
-                String.join("", "*       ", "       *", " *       ", "       * "),
-                String.join("", " *     * ", " *     * ", " *       ", " *     * "),
-                String.join("", "  **  ", "  **  ", " *       ", "  ***  ")
-
-        ));
+        // Enhanced for-loop
+        for (String line : lines) {
+            System.out.println(line);
+        }
     }
+
+
+
 
     }
